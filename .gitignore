@@ -1,0 +1,39 @@
+# ===================
+# Large Files (>100MB)
+# ===================
+
+bci_foundation_model/combined_dataset.csv
+bci_foundation_model/neurosity_dataset.zip
+
+# ===================
+# Python
+# ===================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+venv/
+.venv/
+env/
+
+# ===================
+# Jupyter
+# ===================
+
+.ipynb_checkpoints/
+
+# ===================
+# OS / IDE
+# ===================
+
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~

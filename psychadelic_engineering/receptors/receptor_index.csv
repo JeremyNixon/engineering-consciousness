@@ -1,0 +1,113 @@
+pdb_id,receptor_class,subtype,description,organism,ligand,resolution_A,method,title,deposition_date,file
+7E2Y,Serotonin,5-HT1A,"Active state bound to aripiprazole, Gi protein",Homo sapiens,Aripiprazole,3.0,EM,Serotonin-bound Serotonin 1A (5-HT1A) receptor-Gi protein complex,2021-02-07T00:00:00+0000,7E2Y.pdb
+7E2Z,Serotonin,5-HT1A,"Active state bound to serotonin, Gi protein",Homo sapiens,Serotonin,3.1,EM,Aripiprazole-bound serotonin 1A (5-HT1A) receptor-Gi protein complex,2021-02-07T00:00:00+0000,7E2Z.pdb
+4IAR,Serotonin,5-HT1B,"Bound to ergotamine, active state",Homo sapiens,Ergotamine,2.7,X-ray,Crystal structure of the chimeric protein of 5-HT1B-BRIL in complex with ergotamine (PSI Community Target),2012-12-07T00:00:00+0000,4IAR.pdb
+4IAQ,Serotonin,5-HT1B,Bound to dihydroergotamine,Homo sapiens,Dihydroergotamine,2.8,X-ray,Crystal structure of the chimeric protein of 5-HT1B-BRIL in complex with dihydroergotamine (PSI Community Target),2012-12-07T00:00:00+0000,4IAQ.pdb
+5V54,Serotonin,5-HT1B,Bound to donitriptan agonist,Homo sapiens,Donitriptan,3.9,X-ray,Crystal structure of 5-HT1B receptor in complex with methiothepin,2017-03-13T00:00:00+0000,5V54.pdb
+7E32,Serotonin,5-HT1D,Active state with Gi protein,Homo sapiens,,2.9,EM,Serotonin 1D (5-HT1D) receptor-Gi protein complex,2021-02-07T00:00:00+0000,7E32.pdb
+7E33,Serotonin,5-HT1E,Active state with Gi protein,Homo sapiens,,2.9,EM,Serotonin 1E (5-HT1E) receptor-Gi protein complex,2021-02-07T00:00:00+0000,7E33.pdb
+7EXD,Serotonin,5-HT1F,"Bound to lasmiditan, Gi complex",Homo sapiens,Lasmiditan,3.4,EM,Lasmiditan-bound serotonin 1F (5-HT1F) receptor-Gi protein complex,2021-05-27T00:00:00+0000,7EXD.pdb
+6WHA,Serotonin,5-HT2A,"Bound to LSD, active state",Homo sapiens,LSD,3.36,EM,"HTR2A bound to 25-CN-NBOH in complex with a mini-Galpha-q protein, beta/gamma subunits and an active-state stabilizing single-chain variable fragment (scFv16) obtained by cryo-electron microscopy (cryoEM)",2020-04-07T00:00:00+0000,6WHA.pdb
+6WH4,Serotonin,5-HT2A,"Bound to 25-CN-NBOH, Gq complex",Homo sapiens,25-CN-NBOH,3.4,X-ray,Crystal structure of HTR2A with inverse agonist,2020-04-07T00:00:00+0000,6WH4.pdb
+7WC4,Serotonin,5-HT2A,Bound to psilocin,Homo sapiens,Psilocin,3.2,X-ray,Crystal structure of serotonin 2A receptor in complex with serotonin,2021-12-18T00:00:00+0000,7WC4.pdb
+7WC5,Serotonin,5-HT2A,Bound to serotonin,Homo sapiens,Serotonin,3.2,X-ray,Crystal structure of serotonin 2A receptor in complex with psilocin,2021-12-18T00:00:00+0000,7WC5.pdb
+7WC6,Serotonin,5-HT2A,Bound to lisuride (non-hallucinogenic),Homo sapiens,Lisuride,2.6,X-ray,Crystal structure of serotonin 2A receptor in complex with LSD,2021-12-18T00:00:00+0000,7WC6.pdb
+7WC7,Serotonin,5-HT2A,Bound to methiothepin (antagonist),Homo sapiens,Methiothepin,2.6,X-ray,Crystal structure of serotonin 2A receptor in complex with lisuride,2021-12-18T00:00:00+0000,7WC7.pdb
+8DPG,Serotonin,5-HT2A,Bound to DMT,Homo sapiens,DMT,3.6,EM,Cryo-EM structure of the 5HT2C receptor (INI isoform) bound to psilocin,2022-07-15T00:00:00+0000,8DPG.pdb
+7VOD,Serotonin,5-HT2A,Inactive state with risperidone,Homo sapiens,Risperidone,3.3,X-ray,Crystal structure of 5-HT2AR in complex with cariprazine,2021-10-13T00:00:00+0000,7VOD.pdb
+7VOE,Serotonin,5-HT2A,Inactive state with zotepine,Homo sapiens,Zotepine,2.9,X-ray,Crystal structure of 5-HT2AR in complex with aripiprazole,2021-10-13T00:00:00+0000,7VOE.pdb
+4IB4,Serotonin,5-HT2B,Bound to ergotamine,Homo sapiens,Ergotamine,2.7,X-ray,Crystal structure of the chimeric protein of 5-HT2B-BRIL in complex with ergotamine,2012-12-07T00:00:00+0000,4IB4.pdb
+5TUD,Serotonin,5-HT2B,Bound to LSD,Homo sapiens,LSD,3.0,X-ray,Structural Insights into the Extracellular Recognition of the Human Serotonin 2B Receptor by an Antibody,2016-11-05T00:00:00+0000,5TUD.pdb
+4NC3,Serotonin,5-HT2B,"Bound to ergotamine, different crystal form",Homo sapiens,Ergotamine,2.8,X-ray,Crystal structure of the 5-HT2B receptor solved using serial femtosecond crystallography in lipidic cubic phase.,2013-10-23T00:00:00+0000,4NC3.pdb
+6BQG,Serotonin,5-HT2C,"Bound to ergotamine, active state",Homo sapiens,Ergotamine,3.0,X-ray,Crystal structure of 5-HT2C in complex with ergotamine,2017-11-27T00:00:00+0000,6BQG.pdb
+6BQH,Serotonin,5-HT2C,"Bound to ritanserin, inactive state",Homo sapiens,Ritanserin,2.7,X-ray,Crystal structure of 5-HT2C in complex with ritanserin,2017-11-27T00:00:00+0000,6BQH.pdb
+6DG8,Serotonin,5-HT3A,Apo state ion channel,Mus musculus,,3.89,EM,Full-length 5-HT3A receptor in a serotonin-bound conformation- State 2,2018-05-17T00:00:00+0000,6DG8.pdb
+6NP0,Serotonin,5-HT3A,"Bound to serotonin, open state",Mus musculus,Serotonin,2.92,EM,Cryo-EM structure of 5HT3A receptor in presence of granisetron,2019-01-17T00:00:00+0000,6NP0.pdb
+6HIN,Serotonin,5-HT3A,Bound to granisetron antagonist,Mus musculus,Granisetron,4.1,EM,"Mouse serotonin 5-HT3 receptor, serotonin-bound, F conformation",2018-08-30T00:00:00+0000,6HIN.pdb
+7XT8,Serotonin,5-HT4,Active state with Gs protein,Homo sapiens,Serotonin,3.1,EM,Serotonin 4 (5-HT4) receptor-Gs-Nb35 complex,2022-05-16T00:00:00+0000,7XT8.pdb
+7XTC,Serotonin,5-HT6,Active state with Gs protein,Homo sapiens,,3.2,EM,Serotonin 7 (5-HT7) receptor-Gs-Nb35 complex,2022-05-16T00:00:00+0000,7XTC.pdb
+7XTA,Serotonin,5-HT7,Active state with Gs protein,Homo sapiens,5-CT,3.2,EM,Serotonin 4 (5-HT4) receptor-Gi-scFv16 complex,2022-05-16T00:00:00+0000,7XTA.pdb
+7CKW,Dopamine,D1,"Active state with Gs protein, SKF-81297 agonist",Homo sapiens,SKF-81297,3.22,EM,Cryo-EM structure of Fenoldopam bound dopamine receptor DRD1-Gs signaling complex,2020-07-20T00:00:00+0000,7CKW.pdb
+7CKZ,Dopamine,D1,"Active state with Gs protein, fenoldopam",Homo sapiens,Fenoldopam,3.1,EM,Cryo-EM structure of Dopamine and LY3154207 bound dopamine receptor DRD1-Gs signaling complex,2020-07-20T00:00:00+0000,7CKZ.pdb
+7LJC,Dopamine,D1,Bound to non-catechol agonist,Homo sapiens,,3.0,EM,Allosteric modulator LY3154207 binding to SKF-81297-bound dopamine receptor 1 in complex with miniGs protein,2021-01-28T00:00:00+0000,7LJC.pdb
+7F0T,Dopamine,D1,"Bound to tavapadon, biased agonist",Homo sapiens,Tavapadon,3.1,EM,Cryo-EM structure of dopamine receptor 1 and mini-Gs complex with dopamine bound,2021-06-07T00:00:00+0000,7F0T.pdb
+6CM4,Dopamine,D2,Bound to risperidone (antipsychotic),Homo sapiens,Risperidone,2.867,X-ray,Structure of the D2 Dopamine Receptor Bound to the Atypical Antipsychotic Drug Risperidone,2018-03-02T00:00:00+0000,6CM4.pdb
+6LUQ,Dopamine,D2,Bound to haloperidol,Homo sapiens,Haloperidol,3.1,X-ray,Haloperidol bound D2 dopamine receptor structure inspired discovery of subtype selective ligands,2020-01-30T00:00:00+0000,6LUQ.pdb
+7DFP,Dopamine,D2,"Active state with Gi protein, bromocriptine",Homo sapiens,Bromocriptine,3.1,X-ray,Human dopamine D2 receptor in complex with spiperone,2020-11-09T00:00:00+0000,7DFP.pdb
+7JVR,Dopamine,D2,"Active state with Gi, rotigotine",Homo sapiens,Rotigotine,2.8,EM,Cryo-EM structure of Bromocriptine-bound dopamine receptor 2 in complex with Gi protein,2020-08-22T00:00:00+0000,7JVR.pdb
+3PBL,Dopamine,D3,Bound to eticlopride antagonist,Homo sapiens,Eticlopride,2.89,X-ray,Structure of the human dopamine D3 receptor in complex with eticlopride,2010-10-20T00:00:00+0000,3PBL.pdb
+7CMU,Dopamine,D3,"Active state with Gi protein, pramipexole",Homo sapiens,Pramipexole,3.0,EM,Dopamine Receptor D3R-Gi-Pramipexole complex,2020-07-29T00:00:00+0000,7CMU.pdb
+5WIU,Dopamine,D4,Bound to nemonapride antagonist,Homo sapiens,Nemonapride,1.962,X-ray,Structure of the human D4 Dopamine receptor in complex with Nemonapride,2017-07-20T00:00:00+0000,5WIU.pdb
+5WIV,Dopamine,D4,Bound to L-745870 antagonist,Homo sapiens,L-745870,2.143,X-ray,Structure of the sodium-bound human D4 Dopamine receptor in complex with Nemonapride,2017-07-20T00:00:00+0000,5WIV.pdb
+7LJD,Dopamine,D5,Active state with Gs protein,Homo sapiens,,3.2,EM,Allosteric modulator LY3154207 binding to dopamine-bound dopamine receptor 1 in complex with miniGs protein,2021-01-28T00:00:00+0000,7LJD.pdb
+5TGZ,Cannabinoid,CB1,Bound to AM6538 antagonist,Homo sapiens,AM6538,2.8,X-ray,Crystal Structure of the Human Cannabinoid Receptor CB1,2016-09-28T00:00:00+0000,5TGZ.pdb
+5XRA,Cannabinoid,CB1,Bound to AM841 agonist,Homo sapiens,AM841,2.8,X-ray,Crystal structure of the human CB1 in complex with agonist AM11542,2017-06-08T00:00:00+0000,5XRA.pdb
+6N4B,Cannabinoid,CB1,"Bound to MDMB-Fubinaca, Gi complex",Homo sapiens,MDMB-Fubinaca,3.0,EM,Cannabinoid Receptor 1-G Protein Complex,2018-11-18T00:00:00+0000,6N4B.pdb
+5U09,Cannabinoid,CB1,Bound to taranabant inverse agonist,Homo sapiens,Taranabant,2.6,X-ray,High-resolution crystal structure of the human CB1 cannabinoid receptor,2016-11-23T00:00:00+0000,5U09.pdb
+6KPG,Cannabinoid,CB1,"Bound to CP55940 agonist, Gi",Homo sapiens,CP55940,3.0,EM,Cryo-EM structure of CB1-G protein complex,2019-08-15T00:00:00+0000,6KPG.pdb
+5ZTY,Cannabinoid,CB2,Bound to AM10257 antagonist,Homo sapiens,AM10257,2.8,X-ray,Crystal structure of human G protein coupled receptor,2018-05-05T00:00:00+0000,5ZTY.pdb
+6KPC,Cannabinoid,CB2,"Bound to WIN 55212-2, Gi complex",Homo sapiens,WIN 55212-2,3.2,X-ray,Crystal structure of an agonist bound GPCR,2019-08-15T00:00:00+0000,6KPC.pdb
+6PT0,Cannabinoid,CB2,"Bound to AM12033 agonist, Gi",Homo sapiens,AM12033,3.2,EM,"Cryo-EM structure of human cannabinoid receptor 2-Gi protein in complex with agonist WIN 55,212-2",2019-07-14T00:00:00+0000,6PT0.pdb
+4DKL,Opioid,Mu (MOR),"Bound to beta-funaltrexamine, inactive",Mus musculus,BFN,2.8,X-ray,Crystal structure of the mu-opioid receptor bound to a morphinan antagonist,2012-02-03T00:00:00+0000,4DKL.pdb
+5C1M,Opioid,Mu (MOR),"Active state with BU72 agonist, Gi",Mus musculus,BU72,2.07,X-ray,Crystal structure of active mu-opioid receptor bound to the agonist BU72,2015-06-15T00:00:00+0000,5C1M.pdb
+6DDE,Opioid,Mu (MOR),"Bound to DAMGO agonist, Gi protein",Mus musculus,DAMGO,3.5,EM,Mu Opioid Receptor-Gi Protein Complex,2018-05-10T00:00:00+0000,6DDE.pdb
+6DDF,Opioid,Mu (MOR),Active state agonist,Mus musculus,,3.5,EM,Mu Opioid Receptor-Gi Protein Complex,2018-05-10T00:00:00+0000,6DDF.pdb
+7T2G,Opioid,Mu (MOR),"Bound to fentanyl, Gi",Homo sapiens,Fentanyl,2.5,EM,CryoEM structure of mu-opioid receptor - Gi protein complex bound to mitragynine pseudoindoxyl (MP),2021-12-04T00:00:00+0000,7T2G.pdb
+8EF5,Opioid,Mu (MOR),"Bound to morphine, Gi",Homo sapiens,Morphine,3.3,EM,Fentanyl-bound mu-opioid receptor-Gi complex,2022-09-08T00:00:00+0000,8EF5.pdb
+4N6H,Opioid,Delta (DOR),Bound to naltrindole antagonist,Homo sapiens,Naltrindole,1.8,X-ray,1.8 A Structure of the human delta opioid 7TM receptor (PSI Community Target),2013-10-12T00:00:00+0000,4N6H.pdb
+4RWD,Opioid,Delta (DOR),Bound to DIPP-NH2 peptide agonist,Homo sapiens,DIPP-NH2,2.7,X-ray,XFEL structure of the human delta opioid receptor in complex with a bifunctional peptide,2014-12-02T00:00:00+0000,4RWD.pdb
+6PT2,Opioid,Delta (DOR),"Active state with DPI-287, Gi",Homo sapiens,DPI-287,2.8,X-ray,Crystal structure of the active delta opioid receptor in complex with the peptide agonist KGCHM07,2019-07-14T00:00:00+0000,6PT2.pdb
+4DJH,Opioid,Kappa (KOR),Bound to JDTic antagonist,Homo sapiens,JDTic,2.9,X-ray,Structure of the human kappa opioid receptor in complex with JDTic,2012-02-01T00:00:00+0000,4DJH.pdb
+6B73,Opioid,Kappa (KOR),"Active state with MP1104 agonist, Gi",Homo sapiens,MP1104,3.1,X-ray,Crystal Structure of a nanobody-stabilized active state of the kappa-opioid receptor,2017-10-03T00:00:00+0000,6B73.pdb
+6VI4,Opioid,Kappa (KOR),Bound to salvinorin A (from S. divinorum),Homo sapiens,Salvinorin A,3.3,X-ray,Nanobody-Enabled Monitoring of Kappa Opioid Receptor States,2020-01-11T00:00:00+0000,6VI4.pdb
+5DHH,Opioid,NOP/ORL1,Bound to C-24 antagonist,Homo sapiens,C-24,3.004,X-ray,The crystal structure of nociceptin/orphanin FQ peptide receptor (NOP) in complex with SB-612111 (PSI Community Target),2015-08-31T00:00:00+0000,5DHH.pdb
+5DHG,Opioid,NOP/ORL1,Bound to SB-612111,Homo sapiens,SB-612111,3.0,X-ray,The crystal structure of nociceptin/orphanin FQ peptide receptor (NOP) in complex with C-35 (PSI Community Target),2015-08-30T00:00:00+0000,5DHG.pdb
+6HUG,GABA,GABA-A (alpha1/beta2/gamma2),"Cryo-EM, bound to GABA + flumazenil",Homo sapiens,GABA + Flumazenil,3.1,EM,CryoEM structure of human full-length alpha1beta3gamma2L GABA(A)R in complex with picrotoxin and megabody Mb38.,2018-10-08T00:00:00+0000,6HUG.pdb
+6X3T,GABA,GABA-A (alpha1/beta2/gamma2),Bound to diazepam (Valium),Homo sapiens,Diazepam,2.55,EM,Human GABAA receptor alpha1-beta2-gamma2 subtype in complex with GABA plus propofol,2020-05-21T00:00:00+0000,6X3T.pdb
+6X3X,GABA,GABA-A (alpha1/beta3/gamma2),Bound to alprazolam (Xanax),Homo sapiens,Alprazolam,2.92,EM,Human GABAA receptor alpha1-beta2-gamma2 subtype in complex with GABA plus diazepam,2020-05-21T00:00:00+0000,6X3X.pdb
+6X3S,GABA,GABA-A (alpha1/beta2/gamma2),Bound to zolpidem (Ambien),Homo sapiens,Zolpidem,3.12,EM,Human GABAA receptor alpha1-beta2-gamma2 subtype in complex with bicuculline methbromide,2020-05-21T00:00:00+0000,6X3S.pdb
+7QNB,GABA,GABA-A (alpha5/beta3/gamma2),Bound to bretazenil,Homo sapiens,Bretazenil,3.1,EM,Cryo-EM structure of human full-length beta3gamma2 GABA(A)R in complex with GABA and nanobody Nb25,2021-12-20T00:00:00+0000,7QNB.pdb
+6D6U,GABA,GABA-A (alpha1/beta3),Bound to phenobarbital,Homo sapiens,Phenobarbital,3.92,EM,"Human GABA-A receptor alpha1-beta2-gamma2 subtype in complex with GABA and flumazenil, conformation A",2018-04-22T00:00:00+0000,6D6U.pdb
+6HUP,GABA,GABA-A (alpha1/beta2/gamma2),Bound to Ro15-4513 inverse agonist,Homo sapiens,Ro15-4513,3.58,EM,"CryoEM structure of human full-length alpha1beta3gamma2L GABA(A)R in complex with diazepam (Valium), GABA and megabody Mb38.",2018-10-09T00:00:00+0000,6HUP.pdb
+7EB2,GABA,GABA-B (B1/B2),Active state heterodimer with Gi,Homo sapiens,Baclofen,3.5,EM,Cryo-EM structure of human GABA(B) receptor-Gi protein complex,2021-03-08T00:00:00+0000,7EB2.pdb
+4PE5,Glutamate,NMDA (GluN1/GluN2B),"Bound to ifenprodil, allosteric",Rattus norvegicus,Ifenprodil,3.96,X-ray,Crystal Structure of GluN1a/GluN2B NMDA Receptor Ion Channel,2014-04-22T00:00:00+0000,4PE5.pdb
+4TLM,Glutamate,NMDA (GluN1/GluN2B),Full receptor cryo-EM,Xenopus/Rattus,,3.77,X-ray,"Crystal structure of GluN1/GluN2B NMDA receptor, structure 2",2014-05-30T00:00:00+0000,4TLM.pdb
+7EU7,Glutamate,NMDA (GluN1/GluN2A),Bound to ketamine,Rattus norvegicus,Ketamine,3.5,EM,"Structure of the human GluN1-GluN2A NMDA receptor in complex with S-ketamine, glycine and glutamate",2021-05-16T00:00:00+0000,7EU7.pdb
+7SAD,Glutamate,NMDA (GluN1/GluN2A),Bound to PCP (phencyclidine),Rattus norvegicus,PCP,3.96,EM,Memantine-bound GluN1a-GluN2B NMDA receptors,2021-09-22T00:00:00+0000,7SAD.pdb
+5WEO,Glutamate,AMPA (GluA2),"Tetrameric receptor, desensitized",Rattus norvegicus,,4.2,EM,"Activated GluA2 complex bound to glutamate, cyclothiazide, and STZ in digitonin",2017-07-10T00:00:00+0000,5WEO.pdb
+6QKC,Glutamate,AMPA (GluA1/2),Heteromeric receptor cryo-EM,Rattus norvegicus,,4.4,EM,GluA1/2 In complex with auxiliary subunit gamma-8,2019-01-28T00:00:00+0000,6QKC.pdb
+5KUF,Glutamate,Kainate (GluK2),Full receptor structure,Rattus norvegicus,,3.8,EM,"GluK2EM with 2S,4R-4-methylglutamate",2016-07-13T00:00:00+0000,5KUF.pdb
+6FFH,Glutamate,mGluR5,Bound to mavoglurant (NAM),Homo sapiens,Mavoglurant,2.65,X-ray,Crystal Structure of mGluR5 in complex with Fenobam at 2.65 A,2018-01-08T00:00:00+0000,6FFH.pdb
+7FD8,Glutamate,mGluR5,Active state TM domain,Homo sapiens,,3.8,EM,Thermostabilised full length human mGluR5-5M bound with L-quisqualic acid,2021-07-16T00:00:00+0000,7FD8.pdb
+5KXI,Acetylcholine,nAChR (alpha4/beta2),Bound to nicotine,Homo sapiens,Nicotine,3.941,X-ray,X-ray structure of the human Alpha4Beta2 nicotinic receptor,2016-07-20T00:00:00+0000,5KXI.pdb
+6CNJ,Acetylcholine,nAChR (alpha4/beta2),Bound to NS9283 positive allosteric modulator,Homo sapiens,NS9283,3.7,EM,Structure of the 2alpha3beta stiochiometry of the human Alpha4Beta2 nicotinic receptor,2018-03-08T00:00:00+0000,6CNJ.pdb
+7KOO,Acetylcholine,nAChR (alpha7),Bound to epibatidine agonist,Homo sapiens,Epibatidine,3.0,EM,Alpha-7 nicotinic acetylcholine receptor bound to alpha-bungarotoxin in a resting state,2020-11-09T00:00:00+0000,7KOO.pdb
+7EKI,Acetylcholine,nAChR (alpha3/beta4),Bound to nicotine,Homo sapiens,Nicotine,3.18,EM,human alpha 7 nicotinic acetylcholine receptor in apo-form,2021-04-05T00:00:00+0000,7EKI.pdb
+6OIJ,Acetylcholine,M1 mAChR,Active state with Gi protein,Homo sapiens,Iperoxo,3.3,EM,Muscarinic acetylcholine receptor 1-G11 protein complex,2019-04-09T00:00:00+0000,6OIJ.pdb
+3UON,Acetylcholine,M2 mAChR,Bound to QNB antagonist,Homo sapiens,QNB,3.0,X-ray,Structure of the human M2 muscarinic acetylcholine receptor bound to an antagonist,2011-11-16T00:00:00+0000,3UON.pdb
+4DAJ,Acetylcholine,M3 mAChR,Bound to tiotropium,Rattus norvegicus,Tiotropium,3.4,X-ray,Structure of the M3 Muscarinic Acetylcholine Receptor,2012-01-12T00:00:00+0000,4DAJ.pdb
+5HK1,Sigma,Sigma-1,Bound to PD144418 antagonist,Homo sapiens,PD144418,2.5051,X-ray,Human sigma-1 receptor bound to PD144418,2016-01-13T00:00:00+0000,5HK1.pdb
+5HK2,Sigma,Sigma-1,Bound to 4-IBP agonist,Homo sapiens,4-IBP,3.2,X-ray,Human sigma-1 receptor bound to 4-IBP,2016-01-13T00:00:00+0000,5HK2.pdb
+6DK1,Sigma,Sigma-1,Bound to haloperidol,Homo sapiens,Haloperidol,3.12,X-ray,Human sigma-1 receptor bound to (+)-pentazocine,2018-05-28T00:00:00+0000,6DK1.pdb
+7W2O,Sigma,Sigma-1,Bound to DMT,Homo sapiens,DMT,3.21,X-ray,Crystal structure of Pseudomonas aeruginosa transcriptional regulator PvrA in the wide conformation,2021-11-24T00:00:00+0000,7W2O.pdb
+3SN6,Adrenergic,Beta-2,"Active state with Gs, BI-167107 agonist (Nobel Prize structure)",Homo sapiens,BI-167107,3.2,X-ray,Crystal structure of the beta2 adrenergic receptor-Gs protein complex,2011-06-28T00:00:00+0000,3SN6.pdb
+6KUX,Adrenergic,Alpha-2A,"Bound to brimonidine, Gi complex",Homo sapiens,Brimonidine,2.7,X-ray,Crystal structures of the alpha2A adrenergic receptor in complex with an antagonist RSC.,2019-09-02T00:00:00+0000,6KUX.pdb
+7B6W,Adrenergic,Alpha-2A,Active state with dexmedetomidine,Homo sapiens,Dexmedetomidine,2.873,X-ray,Crystal structure of the human alpha1B adrenergic receptor in complex with inverse agonist (+)-cyclazosin,2020-12-08T00:00:00+0000,7B6W.cif
+7YMI,Adrenergic,Alpha-1A,Bound to oxymetazoline,Homo sapiens,Oxymetazoline,3.3,EM,PSII-Pcb Dimer of Acaryochloris Marina,2022-07-28T00:00:00+0000,7YMI.pdb
+7UL3,Histamine,H1,Bound to doxepin (antihistamine/antidepressant),Homo sapiens,Doxepin,3.0,EM,"CryoEM Structure of Inactive H2R Bound to Famotidine, Nb6M, and NabFab",2022-04-03T00:00:00+0000,7UL3.pdb
+7YFC,Histamine,H2,Active state with Gs,Homo sapiens,Histamine,3.0,EM,Cryo-EM structure of the histamine-bound histamine H4 receptor and Gq complex,2022-07-08T00:00:00+0000,7YFC.pdb
+7F61,Histamine,H3,Bound to PF-03654746 antagonist,Homo sapiens,PF-03654746,2.6,X-ray,Crystal structure of human histamine receptor H3R in complex with antagonist PF03654746,2021-06-23T00:00:00+0000,7F61.pdb
+8JLN,Trace Amine,TAAR1,"Bound to ulotaront, Gs complex",Homo sapiens,Ulotaront,3.24,EM,T1AM-bound hTAAR1-Gs protein complex,2023-06-02T00:00:00+0000,8JLN.pdb
+6ME2,Melatonin,MT1,Bound to 2-phenylmelatonin agonist,Homo sapiens,2-PMT,2.8,X-ray,XFEL crystal structure of human melatonin receptor MT1 in complex with ramelteon,2018-09-05T00:00:00+0000,6ME2.pdb
+6ME3,Melatonin,MT1,Bound to 2-iodomelatonin,Homo sapiens,2-Iodomelatonin,2.9,X-ray,XFEL crystal structure of human melatonin receptor MT1 in complex with 2-phenylmelatonin,2018-09-05T00:00:00+0000,6ME3.pdb
+6ME6,Melatonin,MT2,Bound to ramelteon,Homo sapiens,Ramelteon,2.8,X-ray,XFEL crystal structure of human melatonin receptor MT2 in complex with 2-phenylmelatonin,2018-09-05T00:00:00+0000,6ME6.pdb
+5I6X,Transporter,SERT,Bound to paroxetine (Paxil),Homo sapiens,Paroxetine,3.14,X-ray,X-ray structure of the ts3 human serotonin transporter complexed with paroxetine at the central site,2016-02-16T00:00:00+0000,5I6X.pdb
+5I71,Transporter,SERT,Bound to citalopram (Celexa),Homo sapiens,Citalopram,3.15,X-ray,X-ray structure of the ts3 human serotonin transporter complexed with s-citalopram at the central site,2016-02-16T00:00:00+0000,5I71.pdb
+6DZZ,Transporter,SERT,Bound to S-citalopram (Lexapro),Homo sapiens,Escitalopram,3.6,EM,Cryo-EM Structure of the wild-type human serotonin transporter in complex with ibogaine and 15B8 Fab in the inward conformation,2018-07-05T00:00:00+0000,6DZZ.pdb
+7LIA,Transporter,SERT,Bound to MDMA (ecstasy),Homo sapiens,MDMA,3.3,EM,5-HT bound serotonin transporter reconstituted in lipid nanodisc in presence of NaCl in outward facing conformation,2021-01-26T00:00:00+0000,7LIA.pdb
+7LI9,Transporter,SERT,Bound to serotonin + ibogaine,Homo sapiens,Ibogaine,3.9,EM,5-HT bound serotonin transporter reconstituted in lipid nanodisc in KCl,2021-01-26T00:00:00+0000,7LI9.pdb
+4XP1,Transporter,DAT,"Bound to dopamine, drosophila",Drosophila melanogaster,Dopamine,2.89,X-ray,X-ray structure of Drosophila dopamine transporter bound to neurotransmitter dopamine,2015-01-16T00:00:00+0000,4XP1.pdb
+4XP4,Transporter,DAT,Bound to D-amphetamine,Drosophila melanogaster,Amphetamine,2.8,X-ray,X-ray structure of Drosophila dopamine transporter in complex with cocaine,2015-01-16T00:00:00+0000,4XP4.pdb
+4XP6,Transporter,DAT,Bound to cocaine analog,Drosophila melanogaster,Cocaine analog,3.1,X-ray,X-ray structure of Drosophila dopamine transporter bound to psychostimulant methamphetamine,2015-01-16T00:00:00+0000,4XP6.pdb
+7ZWK,Transporter,NET,Bound to venlafaxine (Effexor),Homo sapiens,Venlafaxine,2.0,X-ray,Crystal Structure of Unlinked NS2B-NS3 Protease from Zika Virus in Complex with Inhibitor MI-2162,2022-05-19T00:00:00+0000,7ZWK.pdb
+8JQG,Transporter,VMAT2,Bound to tetrabenazine,Homo sapiens,Tetrabenazine,3.72,EM,Cryo EM map of full length PLC gamma 2,2023-06-14T00:00:00+0000,8JQG.pdb
