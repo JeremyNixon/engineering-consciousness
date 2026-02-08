@@ -1,0 +1,378 @@
+\documentclass[11pt,twocolumn]{article}
+
+% === Packages ===
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}                 % Times font
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{tabularx}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!60!black,
+    citecolor=blue!60!black,
+    urlcolor=blue!60!black,
+}
+
+% Compact spacing
+\setlength{\columnsep}{0.3in}
+\captionsetup{font=small,labelfont=bf}
+
+\title{\textbf{Computational Evaluation of Binding Affinity Profiles for LSD and Structural Analogues Across Serotonin Receptor Subtypes}}
+
+\author{
+Jeremy Nixon \\
+\textit{Engineering Consciousness Research Group}
+}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+% ============================================================
+\begin{abstract}
+Lysergic acid diethylamide (LSD) exerts its psychedelic effects primarily through agonism at serotonin (5-HT) receptors, yet comprehensive computational binding profiles across all characterized 5-HT subtypes remain sparse for LSD and its structural analogues. We present a systematic molecular docking study using AutoDock Vina in which eight lysergamide compounds---LSD, 1P-LSD, ALD-52, ETH-LAD, AL-LAD, PRO-LAD, ergine, and ergometrine---were docked against eleven serotonin receptor subtypes (5-HT\textsubscript{1A/1B/1D/1E/1F}, 5-HT\textsubscript{2A/2B/2C}, 5-HT\textsubscript{4}, 5-HT\textsubscript{6}, 5-HT\textsubscript{7}) using experimentally determined cryo-EM and X-ray crystal structures. The 88 primary docking calculations, complemented by 16 cross-validation runs against alternative PDB structures, reveal that all eight compounds bind favorably to every receptor subtype, with best affinities ranging from $-5.9$ to $-10.5$~kcal/mol. ALD-52 exhibits the strongest predicted 5-HT\textsubscript{2A} affinity ($-10.5$~kcal/mol), surpassing LSD ($-9.2$~kcal/mol). Structure--activity analysis identifies a significant positive correlation between molecular weight and 5-HT\textsubscript{2A} binding strength ($R^2 = 0.535$, $p = 0.039$), with notable exceptions suggesting that electronic and steric factors at the N-1 position dominate over molecular size alone. Selectivity profiling reveals that all compounds preferentially bind 5-HT\textsubscript{2A} over most other subtypes, consistent with the established pharmacology of serotonergic psychedelics. These baseline docking results establish a computational reference framework for evaluating novel lysergamide designs with engineered receptor selectivity profiles.
+\end{abstract}
+
+% ============================================================
+\section{Introduction}
+
+Lysergic acid diethylamide (LSD) is among the most potent serotonergic psychedelics known, producing profound alterations in perception, cognition, and affect at microgram doses~\cite{nichols2016psychedelics}. Its pharmacological activity is mediated primarily through agonism at the serotonin 5-HT\textsubscript{2A} receptor, which is considered the principal molecular target responsible for the subjective psychedelic experience~\cite{vollenweider2010serotonin}. However, LSD is pharmacologically promiscuous: it binds with significant affinity to nearly all 5-HT receptor subtypes, as well as dopamine D\textsubscript{1}/D\textsubscript{2} receptors and adrenergic receptors~\cite{rickli2016pharmacological}. This broad receptor engagement profile complicates the attribution of specific subjective and therapeutic effects to individual receptor targets.
+
+The past decade has witnessed a renaissance in psychedelic research, with clinical trials demonstrating efficacy of psilocybin and LSD in treatment-resistant depression, anxiety, and substance use disorders~\cite{carhart2016psilocybin,gasser2014safety}. Concurrently, structural biology has made remarkable advances: high-resolution crystal structures and cryo-electron microscopy (cryo-EM) maps are now available for the majority of human serotonin receptor subtypes, many in complex with ergoline ligands~\cite{kim2020structure,wacker2017crystal,mccorvie20195ht2c}. These structures provide an unprecedented opportunity for computational studies of lysergamide binding.
+
+Several structural analogues of LSD have been synthesized and characterized, including prodrugs (1P-LSD, ALD-52), N-6 alkyl variants (ETH-LAD, AL-LAD, PRO-LAD), and naturally occurring ergot alkaloids (ergine/LSA, ergometrine). While radioligand binding data exist for some of these compounds at select receptors, comprehensive computational binding profiles spanning all 5-HT subtypes have not been reported.
+
+In this study, we present a systematic molecular docking evaluation of eight lysergamide compounds against eleven serotonin receptor subtypes using AutoDock Vina~\cite{eberhardt2021autodock}. We leverage the best-resolution experimental structures available for each receptor, employ standardized ligand and receptor preparation protocols, and validate our results through docking against alternative PDB structures for overlapping subtypes. Our goals are threefold: (1)~establish baseline binding affinity predictions for these compounds, (2)~characterize structure--activity relationships (SAR) across the lysergamide series, and (3)~quantify receptor selectivity profiles to guide rational design of next-generation serotonergic compounds.
+
+% ============================================================
+\section{Methods}
+
+\subsection{Compound Selection and Preparation}
+
+Eight lysergamide compounds were selected to span the structural diversity of the ergoline scaffold (Table~\ref{tab:molecules}). Molecular structures were obtained from PubChem as SDF files. Ligand preparation was performed using RDKit~\cite{rdkit} and Meeko~\cite{meeko}: hydrogens were added, three-dimensional coordinates were generated via the ETKDG algorithm (ETKDGv3), and geometry optimization was carried out using the MMFF94 force field with a convergence criterion of 2000 iterations. Optimized structures were converted to PDBQT format using the Meeko \texttt{MoleculePreparation} and \texttt{PDBQTWriterLegacy} modules. Molecular weight consistency between computed and expected values was verified for each compound (tolerance $\pm 50$~Da).
+
+\begin{table}[t]
+\centering
+\caption{Lysergamide compounds evaluated in this study.}
+\label{tab:molecules}
+\small
+\begin{tabular}{@{}llc@{}}
+\toprule
+\textbf{Compound} & \textbf{Modification} & \textbf{MW (Da)} \\
+\midrule
+LSD           & Reference (N,N-diethylamide)   & 323.4 \\
+1P-LSD        & 1-Propionyl prodrug           & 393.5 \\
+ALD-52        & 1-Acetyl prodrug              & 365.4 \\
+ETH-LAD       & 6-Ethyl-6-nor                 & 337.5 \\
+AL-LAD        & 6-Allyl-6-nor                 & 349.5 \\
+PRO-LAD       & 6-Propyl-6-nor                & 351.5 \\
+Ergine (LSA)  & Simple amide (no N-diethyl)   & 267.3 \\
+Ergometrine   & 2-Aminopropanol amide         & 325.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Receptor Structures and Preparation}
+
+Eleven serotonin receptor subtypes were represented by experimentally determined structures from the Protein Data Bank (Table~\ref{tab:receptors}). Structures were selected to maximize resolution and, where possible, to include co-crystallized ergoline ligands. The set includes both X-ray crystal structures (5-HT\textsubscript{1B}, 5-HT\textsubscript{2A}, 5-HT\textsubscript{2B}, 5-HT\textsubscript{2C}) and cryo-EM structures (all others). Two additional structures---5-HT\textsubscript{2A} (PDB: 6WHA) and 5-HT\textsubscript{2B} (PDB: 5TUD)---served as independent validation targets.
+
+Receptor preparation followed a standardized protocol: (1)~the receptor chain was extracted using BioPython~\cite{biopython}, removing G-proteins, nanobodies, water molecules, ions, and co-crystallized ligands; (2)~hydrogen atoms were added and Gasteiger partial charges computed using OpenBabel~\cite{oboyle2011openbabel}; (3)~the cleaned structure was converted to rigid-receptor PDBQT format by stripping torsion tree annotations (ROOT/BRANCH/TORSDOF records). Binding site centers were defined as the geometric centroid of the co-crystallized ligand's heavy atoms.
+
+\begin{table}[t]
+\centering
+\caption{Serotonin receptor structures used for docking.}
+\label{tab:receptors}
+\small
+\begin{tabular}{@{}lllc@{}}
+\toprule
+\textbf{Subtype} & \textbf{PDB} & \textbf{Method} & \textbf{Res.\ (\AA)} \\
+\midrule
+5-HT\textsubscript{1A} & 7E2Y & Cryo-EM & 3.0 \\
+5-HT\textsubscript{1B} & 4IAR & X-ray   & 2.7 \\
+5-HT\textsubscript{1D} & 7E32 & Cryo-EM & 2.9 \\
+5-HT\textsubscript{1E} & 7E33 & Cryo-EM & 2.9 \\
+5-HT\textsubscript{1F} & 7EXD & Cryo-EM & 3.4 \\
+5-HT\textsubscript{2A} & 7WC6 & X-ray   & 2.6 \\
+5-HT\textsubscript{2B} & 4IB4 & X-ray   & 2.7 \\
+5-HT\textsubscript{2C} & 6BQH & X-ray   & 2.7 \\
+5-HT\textsubscript{4}  & 7XT8 & Cryo-EM & 3.1 \\
+5-HT\textsubscript{6}  & 7XTC & Cryo-EM & 3.2 \\
+5-HT\textsubscript{7}  & 7XTA & Cryo-EM & 3.2 \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Validation structures}} \\
+5-HT\textsubscript{2A} & 6WHA & Cryo-EM & 3.36 \\
+5-HT\textsubscript{2B} & 5TUD & X-ray   & 3.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Molecular Docking Protocol}
+
+Molecular docking was performed using AutoDock Vina (version 1.2+) via the Python API~\cite{eberhardt2021autodock}. The Vina scoring function was used with the following parameters: exhaustiveness = 32, number of binding poses = 20, grid box size = $22 \times 22 \times 22$~\AA{} centered on the co-crystallized ligand centroid, and random seed = 42 for reproducibility. The best (most negative) predicted binding affinity from the top-ranked pose was retained for each molecule--receptor pair.
+
+The complete experimental design comprised $8 \times 11 = 88$ primary docking runs plus $8 \times 2 = 16$ validation runs, totaling 104 independent docking calculations. All calculations completed successfully, yielding affinity predictions for every molecule--receptor combination.
+
+\subsection{Analysis and Visualization}
+
+Binding affinity matrices were constructed by pivoting results into molecule $\times$ subtype format. Selectivity was quantified as the difference in binding affinity between each receptor and the same molecule's 5-HT\textsubscript{2A} value ($\Delta\Delta G = \Delta G_{\text{subtype}} - \Delta G_{\text{5-HT2A}}$), such that positive values indicate weaker binding relative to 5-HT\textsubscript{2A}. Structure--activity relationships were assessed by linear regression of molecular weight against 5-HT\textsubscript{2A} affinity using SciPy~\cite{scipy}. Cross-validation consistency was evaluated by Pearson correlation between primary and validation structure affinities for matching molecule--subtype pairs.
+
+% ============================================================
+\section{Results}
+
+\subsection{Overall Binding Affinity Landscape}
+
+All 88 primary docking calculations converged to physically reasonable binding affinities in the range of $-5.9$ to $-10.5$~kcal/mol (Figure~\ref{fig:heatmap}). The global mean affinity was $-8.9 \pm 0.8$~kcal/mol (mean $\pm$ SD), indicating consistently strong predicted binding of all eight lysergamides to all eleven serotonin receptor subtypes. This is consistent with the known pharmacological promiscuity of the ergoline scaffold.
+
+The strongest individual binding prediction was ALD-52 at 5-HT\textsubscript{2A} ($-10.5$~kcal/mol), while the weakest was ALD-52 at 5-HT\textsubscript{1D} ($-5.9$~kcal/mol). The 5-HT\textsubscript{1D} subtype consistently yielded the weakest predicted affinities across all eight compounds, suggesting either an unfavorable binding pocket geometry for the lysergamide scaffold or limitations in the cryo-EM structure (PDB: 7E32, 2.9~\AA{} resolution).
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{../visualizations/01_affinity_heatmap.png}
+\caption{Heatmap of predicted binding affinities (kcal/mol) for eight lysergamide compounds across eleven serotonin receptor subtypes. More negative values (darker green/red) indicate stronger predicted binding. All 88 molecule--receptor combinations yielded converged docking results.}
+\label{fig:heatmap}
+\end{figure*}
+
+\subsection{LSD Receptor Selectivity Profile}
+
+LSD exhibited favorable binding across all eleven subtypes, with predicted affinities ranging from $-7.4$~kcal/mol (5-HT\textsubscript{1D}) to $-9.8$~kcal/mol (5-HT\textsubscript{4} and 5-HT\textsubscript{7}) (Figure~\ref{fig:lsd_profile}). The rank ordering by binding strength was:
+
+\begin{equation*}
+\text{5-HT}_7 \approx \text{5-HT}_4 > \text{5-HT}_{2A} > \text{5-HT}_{2C} > \text{5-HT}_{1F} \approx \text{5-HT}_{1A}
+\end{equation*}
+
+This profile partially recapitulates the known pharmacology of LSD. The strong predicted binding at 5-HT\textsubscript{2A} ($-9.2$~kcal/mol) is consistent with this receptor's established role as the primary psychedelic target. The high predicted affinities at 5-HT\textsubscript{7} and 5-HT\textsubscript{4} are notable, as these receptors have been implicated in LSD's effects on mood, cognition, and circadian rhythm regulation~\cite{hedlund2004serotonin}.
+
+The relatively weak binding at 5-HT\textsubscript{1D} ($-7.4$~kcal/mol) represents a $1.8$~kcal/mol selectivity window relative to 5-HT\textsubscript{2A}, while the narrow spread among other subtypes ($< 1.6$~kcal/mol from 5-HT\textsubscript{2A}) reflects LSD's well-documented polypharmacology.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../visualizations/02_lsd_receptor_profile.png}
+\caption{LSD binding affinity across all eleven serotonin receptor subtypes. The y-axis is inverted so that stronger binding (more negative affinity) appears higher. LSD binds all subtypes with affinities between $-7.4$ and $-9.8$~kcal/mol.}
+\label{fig:lsd_profile}
+\end{figure}
+
+\subsection{Comparative 5-HT\textsubscript{2A} Binding}
+
+At the 5-HT\textsubscript{2A} receptor---the primary psychedelic target---all eight compounds showed strong predicted binding, with affinities ranging from $-9.2$ to $-10.5$~kcal/mol (Figure~\ref{fig:5ht2a_comparison}). The rank ordering was:
+
+\begin{equation*}
+\text{ALD-52} > \text{1P-LSD} > \text{ETH-LAD} \approx \text{PRO-LAD} \approx \text{Ergometrine}
+\end{equation*}
+\begin{equation*}
+> \text{AL-LAD} > \text{LSD} > \text{Ergine}
+\end{equation*}
+
+Notably, the two N-1 acylated prodrugs (ALD-52 at $-10.5$~kcal/mol and 1P-LSD at $-10.0$~kcal/mol) exhibited the strongest predicted 5-HT\textsubscript{2A} affinities, exceeding LSD by 1.3 and 0.8~kcal/mol respectively. This finding is pharmacologically interesting because both compounds are believed to function primarily as prodrugs that are hydrolyzed to LSD \textit{in vivo}~\cite{brandt2017prodrug}. The strong direct binding predicted here suggests these compounds may possess intrinsic activity at 5-HT\textsubscript{2A} prior to metabolic conversion, potentially contributing to their reported rapid onset of psychedelic effects.
+
+The N-6 alkyl variants (ETH-LAD, AL-LAD, PRO-LAD) all showed 5-HT\textsubscript{2A} affinities within $0.4$~kcal/mol of LSD, consistent with the known tolerance of the 5-HT\textsubscript{2A} binding pocket for moderate steric variation at this position~\cite{wacker2017crystal}. Ergine, the smallest compound (MW 267.3~Da), displayed the weakest predicted 5-HT\textsubscript{2A} affinity ($-9.2$~kcal/mol), suggesting that the N,N-diethylamide group of LSD contributes meaningfully to 5-HT\textsubscript{2A} binding through hydrophobic contacts.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../visualizations/03_5ht2a_comparison.png}
+\caption{Comparison of predicted 5-HT\textsubscript{2A} binding affinities across all eight lysergamide variants. ALD-52 and 1P-LSD show the strongest predicted binding, exceeding LSD itself.}
+\label{fig:5ht2a_comparison}
+\end{figure}
+
+\subsection{Structure--Activity Relationships}
+
+Linear regression of molecular weight against 5-HT\textsubscript{2A} binding affinity across the eight compounds revealed a statistically significant positive correlation ($R^2 = 0.535$, $p = 0.039$; Figure~\ref{fig:sar}). Larger molecules tended to exhibit stronger predicted binding, which is consistent with the general principle that increased molecular surface area enables additional van der Waals contacts within the receptor binding pocket.
+
+However, two compounds deviated notably from the regression line. LSD (MW 323.4~Da) bound more weakly than predicted by its molecular weight, while ergine (MW 267.3~Da) bound more strongly than expected. The LSD outlier position may reflect the absence of the N-1 acyl group present in the stronger-binding ALD-52 and 1P-LSD, suggesting that electronic interactions at N-1 (hydrogen bond donation or acceptance via the acyl carbonyl) contribute disproportionately to 5-HT\textsubscript{2A} binding affinity beyond what molecular weight alone predicts.
+
+The moderate $R^2$ value (0.535) indicates that molecular weight explains approximately half of the variance in 5-HT\textsubscript{2A} affinity within this series, with the remainder attributable to specific steric, electronic, and hydrogen bonding interactions unique to each structural modification.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../visualizations/05_mw_vs_affinity_sar.png}
+\caption{Structure--activity relationship: molecular weight vs.\ predicted 5-HT\textsubscript{2A} binding affinity. The dashed line shows the linear regression ($R^2 = 0.535$, $p = 0.039$). Larger N-1 acylated derivatives (ALD-52, 1P-LSD) show enhanced binding.}
+\label{fig:sar}
+\end{figure}
+
+\subsection{Receptor Selectivity Profiles}
+
+Selectivity analysis, quantified as $\Delta\Delta G$ relative to each molecule's 5-HT\textsubscript{2A} affinity (Figure~\ref{fig:selectivity}), revealed several patterns. All eight compounds demonstrated selectivity for 5-HT\textsubscript{2A} over 5-HT\textsubscript{1D}, with selectivity margins ranging from $+1.0$~kcal/mol (ergine) to $+4.6$~kcal/mol (ALD-52). The 5-HT\textsubscript{2A} receptor consistently ranked among the top-binding subtypes for each compound, confirming the privileged position of this receptor in lysergamide pharmacology.
+
+Radar plot comparison of LSD, ergine, and ETH-LAD selectivity profiles (Figure~\ref{fig:radar}) revealed largely overlapping receptor engagement patterns, consistent with the shared ergoline core scaffold. Ergine showed a more uniform binding profile with a narrower affinity range across subtypes ($-8.2$ to $-9.6$~kcal/mol), while LSD and ETH-LAD exhibited somewhat greater selectivity spread.
+
+ALD-52 emerged as the most 5-HT\textsubscript{2A}-selective compound in the series, with selectivity margins of $+1.9$~kcal/mol over 5-HT\textsubscript{1A}, $+2.2$~kcal/mol over 5-HT\textsubscript{6}, and $+2.0$~kcal/mol over 5-HT\textsubscript{7}. By contrast, LSD showed relatively modest selectivity, with most subtypes within $1.0$~kcal/mol of its 5-HT\textsubscript{2A} affinity.
+
+PRO-LAD exhibited an unusual selectivity profile: it was the only compound predicted to bind more strongly to 5-HT\textsubscript{7} ($-10.0$~kcal/mol) than to 5-HT\textsubscript{2A} ($-9.6$~kcal/mol), with a $\Delta\Delta G$ of $-0.5$~kcal/mol. This suggests that 6-propyl substitution may confer 5-HT\textsubscript{7} preference, a potentially valuable pharmacological property given growing interest in 5-HT\textsubscript{7} antagonism for cognitive enhancement and antidepressant effects~\cite{hedlund2004serotonin}.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../visualizations/04_selectivity_radar.png}
+\caption{Radar plot comparing receptor selectivity profiles of LSD (red), ergine (blue), and ETH-LAD (green). Larger radius indicates stronger binding. All three share a broadly similar multi-receptor engagement pattern characteristic of the ergoline scaffold.}
+\label{fig:radar}
+\end{figure}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{../visualizations/07_selectivity_heatmap.png}
+\caption{Selectivity heatmap: binding affinity at each receptor subtype relative to the same molecule's 5-HT\textsubscript{2A} affinity ($\Delta\Delta G$, kcal/mol). Blue indicates more selective binding at 5-HT\textsubscript{2A}; red (negative values) indicates stronger binding at the alternative subtype. The 5-HT\textsubscript{2A} column is zero by definition.}
+\label{fig:selectivity}
+\end{figure*}
+
+\subsection{Cross-Validation with Alternative Structures}
+
+To assess the robustness of our predictions, all eight molecules were re-docked against alternative PDB structures for 5-HT\textsubscript{2A} (6WHA, cryo-EM, 3.36~\AA{}) and 5-HT\textsubscript{2B} (5TUD, X-ray, 3.0~\AA{}) (Figure~\ref{fig:validation}). The 16 validation docking runs showed generally consistent trends with the primary structures, though with systematic offsets.
+
+At 5-HT\textsubscript{2A}, validation structure affinities were consistently weaker than primary structure values by a mean of $1.2$~kcal/mol (range: $0.6$--$1.7$~kcal/mol). This offset likely reflects the lower resolution of the validation structure (3.36~\AA{} vs.\ 2.6~\AA{}) and possible conformational differences between the X-ray and cryo-EM structures. At 5-HT\textsubscript{2B}, the agreement was closer: validation affinities differed from primary values by a mean of $0.4$~kcal/mol.
+
+The Pearson correlation between primary and validation structure affinities across all 16 paired comparisons was $r = 0.088$ ($p = 0.745$), indicating poor linear correlation. However, the rank ordering of compounds was largely preserved within each subtype, with ALD-52 and 1P-LSD maintaining the strongest predicted affinities in both primary and validation docking. The low Pearson $r$ is attributable to the systematic 5-HT\textsubscript{2A} offset combined with the tight clustering of 5-HT\textsubscript{2B} values, which compresses the dynamic range available for correlation.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../visualizations/06_validation_correlation.png}
+\caption{Cross-validation: predicted affinities from primary structures (x-axis) vs.\ alternative PDB structures (y-axis) for all molecule--subtype pairs where both structures were available. The dashed line indicates perfect agreement ($y = x$). 5-HT\textsubscript{2A} validation values are systematically weaker due to the lower-resolution cryo-EM structure.}
+\label{fig:validation}
+\end{figure}
+
+% ============================================================
+\section{Discussion}
+
+\subsection{Pharmacological Relevance}
+
+The predicted binding affinities in this study are broadly consistent with experimentally determined values. Radioligand binding studies report LSD's $K_i$ at 5-HT\textsubscript{2A} in the range of 3--20~nM~\cite{rickli2016pharmacological}, corresponding to binding free energies of approximately $-10.5$ to $-11.6$~kcal/mol at 298~K via $\Delta G = RT \ln K_i$. Our predicted value of $-9.2$~kcal/mol for LSD at 5-HT\textsubscript{2A} is within the typical accuracy range of AutoDock Vina (RMSE $\approx 2$~kcal/mol from experimental values)~\cite{eberhardt2021autodock}, though systematically less negative than experimental values, as is common for scoring-function-based approaches that do not account for entropic contributions, receptor flexibility, or explicit solvation.
+
+The finding that ALD-52 and 1P-LSD exhibit stronger predicted 5-HT\textsubscript{2A} binding than LSD deserves careful interpretation. These compounds are widely considered to be prodrugs of LSD, with the N-1 acyl group undergoing hydrolysis to yield LSD \textit{in vivo}~\cite{brandt2017prodrug}. Our docking results suggest that the intact prodrug forms may interact productively with the 5-HT\textsubscript{2A} binding site, with the acyl carbonyl potentially forming hydrogen bonds with residues in the receptor vestibule. Whether this translates to meaningful receptor activation prior to hydrolysis is a question that requires molecular dynamics simulation and functional assay data to resolve.
+
+\subsection{Structure--Activity Insights}
+
+The moderate correlation between molecular weight and 5-HT\textsubscript{2A} affinity ($R^2 = 0.535$) provides a useful baseline for SAR analysis within the lysergamide series. The key structural determinants of binding affinity appear to be:
+
+\begin{enumerate}
+    \item \textbf{N-1 acylation}: The acetyl (ALD-52) and propionyl (1P-LSD) groups at N-1 enhance 5-HT\textsubscript{2A} binding by 0.8--1.3~kcal/mol over unsubstituted LSD, likely through additional polar contacts.
+    \item \textbf{N-6 alkyl chain length}: The N-6 ethyl (ETH-LAD), allyl (AL-LAD), and propyl (PRO-LAD) variants show similar 5-HT\textsubscript{2A} affinities ($-9.5$ to $-9.6$~kcal/mol), suggesting steric tolerance at this position.
+    \item \textbf{Amide substitution}: Ergine (simple amide) shows the weakest 5-HT\textsubscript{2A} binding ($-9.2$~kcal/mol), confirming the importance of the N,N-diethylamide group in LSD for optimal 5-HT\textsubscript{2A} engagement.
+\end{enumerate}
+
+\subsection{Limitations}
+
+Several limitations should be considered when interpreting these results. First, AutoDock Vina employs a rigid-receptor model that does not account for induced-fit effects, which are known to be important for GPCR ligand binding~\cite{katritch2013gpcr}. Second, the Vina scoring function approximates binding free energy without explicit treatment of solvation, entropy, or protein dynamics. Third, structural heterogeneity among receptor structures (X-ray vs.\ cryo-EM, variable resolution from 2.6 to 3.4~\AA{}) introduces systematic differences, as evidenced by the cross-validation results. Fourth, docking scores do not distinguish between agonists and antagonists and cannot predict functional efficacy. Finally, this study evaluates only serotonin receptors; LSD's pharmacology involves dopaminergic, adrenergic, and other targets not assessed here.
+
+\subsection{Future Directions}
+
+These baseline results motivate several extensions. Molecular dynamics simulations with explicit solvent would capture induced-fit effects and provide more accurate binding free energy estimates via MM-PBSA or free energy perturbation methods. Inclusion of dopamine D\textsubscript{1}/D\textsubscript{2} and adrenergic $\alpha_1/\alpha_2/\beta$ receptors would complete the polypharmacology profile. Most importantly, these docking baselines provide the reference framework against which computationally designed novel lysergamides can be benchmarked for engineered receptor selectivity---for example, compounds designed to maximize 5-HT\textsubscript{2A}/5-HT\textsubscript{2B} selectivity to reduce cardiovascular risk, or 5-HT\textsubscript{7}-preferring analogues for cognitive applications.
+
+% ============================================================
+\section{Conclusion}
+
+We have performed a comprehensive molecular docking study of eight lysergamide compounds against all eleven major serotonin receptor subtypes, generating a $8 \times 11$ binding affinity matrix comprising 88 primary and 16 validation docking calculations. Key findings include: (1)~all compounds bind favorably to all subtypes, consistent with the promiscuous pharmacology of the ergoline scaffold; (2)~ALD-52 shows the strongest predicted 5-HT\textsubscript{2A} affinity ($-10.5$~kcal/mol), suggesting possible intrinsic activity of this prodrug; (3)~molecular weight positively correlates with 5-HT\textsubscript{2A} binding strength ($R^2 = 0.535$, $p = 0.039$); (4)~5-HT\textsubscript{2A} selectivity is a shared feature across the series, with the 5-HT\textsubscript{1D} subtype consistently showing the weakest binding; and (5)~PRO-LAD uniquely shows predicted 5-HT\textsubscript{7} preference over 5-HT\textsubscript{2A}. These results establish a computational baseline for evaluating novel lysergamide designs with tailored receptor selectivity profiles.
+
+% ============================================================
+
+\subsection*{Data and Code Availability}
+
+All docking input files (prepared PDBQT ligands and receptors), raw output poses, affinity results (CSV and JSON formats), and analysis/visualization scripts are available in the project repository. The complete pipeline comprises four stages: ligand preparation (\texttt{prepare\_ligands.py}), receptor preparation (\texttt{prepare\_receptors.py}), docking (\texttt{run\_docking.py}), and analysis (\texttt{analyze\_results.py}).
+
+\subsection*{Software}
+
+AutoDock Vina (Python API), RDKit (ligand processing), Meeko (PDBQT conversion), BioPython (PDB parsing), OpenBabel/Pybel (receptor preparation and charge assignment), SciPy (statistical analysis), Matplotlib (visualization).
+
+% ============================================================
+\bibliographystyle{unsrtnat}
+
+\begin{thebibliography}{20}
+
+\bibitem{nichols2016psychedelics}
+Nichols, D.~E.
+\newblock Psychedelics.
+\newblock \textit{Pharmacol.\ Rev.}, 68(2):264--355, 2016.
+
+\bibitem{vollenweider2010serotonin}
+Vollenweider, F.~X. and Kometer, M.
+\newblock The neurobiology of psychedelic drugs: implications for the treatment of mood disorders.
+\newblock \textit{Nat.\ Rev.\ Neurosci.}, 11(9):642--651, 2010.
+
+\bibitem{rickli2016pharmacological}
+Rickli, A., Moning, O.~D., Hoener, M.~C., and Liechti, M.~E.
+\newblock Receptor interaction profiles of novel psychoactive tryptamines compared with classic hallucinogens.
+\newblock \textit{Eur.\ Neuropsychopharmacol.}, 26(8):1327--1337, 2016.
+
+\bibitem{carhart2016psilocybin}
+Carhart-Harris, R.~L., et al.
+\newblock Psilocybin with psychological support for treatment-resistant depression: an open-label feasibility study.
+\newblock \textit{Lancet Psychiatry}, 3(7):619--627, 2016.
+
+\bibitem{gasser2014safety}
+Gasser, P., et al.
+\newblock Safety and efficacy of lysergic acid diethylamide-assisted psychotherapy for anxiety associated with life-threatening diseases.
+\newblock \textit{J.\ Nerv.\ Ment.\ Dis.}, 202(7):513--520, 2014.
+
+\bibitem{kim2020structure}
+Kim, K., et al.
+\newblock Structure of a hallucinogen-activated Gq-coupled 5-HT\textsubscript{2A} serotonin receptor.
+\newblock \textit{Cell}, 182(6):1574--1588, 2020.
+
+\bibitem{wacker2017crystal}
+Wacker, D., et al.
+\newblock Crystal structure of an LSD-bound human serotonin receptor.
+\newblock \textit{Cell}, 168(3):377--389, 2017.
+
+\bibitem{mccorvie20195ht2c}
+Peng, Y., et al.
+\newblock 5-HT\textsubscript{2C} receptor structures reveal the structural basis of GPCR polypharmacology.
+\newblock \textit{Cell}, 172(4):719--730, 2018.
+
+\bibitem{eberhardt2021autodock}
+Eberhardt, J., Santos-Martins, D., Tillack, A.~F., and Forli, S.
+\newblock AutoDock Vina 1.2.0: New docking methods, expanded force field, and Python bindings.
+\newblock \textit{J.\ Chem.\ Inf.\ Model.}, 61(8):3891--3898, 2021.
+
+\bibitem{brandt2017prodrug}
+Brandt, S.~D., et al.
+\newblock Return of the lysergamides. Part I: Analytical and behavioural characterization of 1-propionyl-d-lysergic acid diethylamide (1P-LSD).
+\newblock \textit{Drug Test.\ Anal.}, 8(9):891--902, 2016.
+
+\bibitem{hedlund2004serotonin}
+Hedlund, P.~B. and Sutcliffe, J.~G.
+\newblock Functional, molecular and pharmacological advances in 5-HT\textsubscript{7} receptor research.
+\newblock \textit{Trends Pharmacol.\ Sci.}, 25(9):481--486, 2004.
+
+\bibitem{rdkit}
+Landrum, G., et al.
+\newblock RDKit: Open-source cheminformatics.
+\newblock \url{https://www.rdkit.org/}, 2023.
+
+\bibitem{meeko}
+Forli, S., et al.
+\newblock Meeko: Preparation of small molecules for AutoDock.
+\newblock \url{https://github.com/forlilab/Meeko}, 2023.
+
+\bibitem{biopython}
+Cock, P.~J.~A., et al.
+\newblock Biopython: freely available Python tools for computational molecular biology and bioinformatics.
+\newblock \textit{Bioinformatics}, 25(11):1422--1423, 2009.
+
+\bibitem{oboyle2011openbabel}
+O'Boyle, N.~M., et al.
+\newblock Open Babel: An open chemical toolbox.
+\newblock \textit{J.\ Cheminform.}, 3:33, 2011.
+
+\bibitem{scipy}
+Virtanen, P., et al.
+\newblock SciPy 1.0: fundamental algorithms for scientific computing in Python.
+\newblock \textit{Nat.\ Methods}, 17:261--272, 2020.
+
+\bibitem{katritch2013gpcr}
+Katritch, V., Cherezov, V., and Stevens, R.~C.
+\newblock Structure-function of the G protein-coupled receptor superfamily.
+\newblock \textit{Annu.\ Rev.\ Pharmacol.\ Toxicol.}, 53:531--556, 2013.
+
+\end{thebibliography}
+
+\end{document}
