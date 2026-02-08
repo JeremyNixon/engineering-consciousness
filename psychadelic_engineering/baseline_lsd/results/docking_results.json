@@ -1,0 +1,834 @@
+[
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT1A_7E2Y",
+    "subtype": "5-HT1A",
+    "is_validation": false,
+    "best_affinity": -9.02,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT1B_4IAR",
+    "subtype": "5-HT1B",
+    "is_validation": false,
+    "best_affinity": -8.335,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT1D_7E32",
+    "subtype": "5-HT1D",
+    "is_validation": false,
+    "best_affinity": -7.393,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT1E_7E33",
+    "subtype": "5-HT1E",
+    "is_validation": false,
+    "best_affinity": -8.404,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT1F_7EXD",
+    "subtype": "5-HT1F",
+    "is_validation": false,
+    "best_affinity": -9.04,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT2A_7WC6",
+    "subtype": "5-HT2A",
+    "is_validation": false,
+    "best_affinity": -9.226,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT2B_4IB4",
+    "subtype": "5-HT2B",
+    "is_validation": false,
+    "best_affinity": -8.421,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT2C_6BQH",
+    "subtype": "5-HT2C",
+    "is_validation": false,
+    "best_affinity": -9.122,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT4_7XT8",
+    "subtype": "5-HT4",
+    "is_validation": false,
+    "best_affinity": -9.785,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT6_7XTC",
+    "subtype": "5-HT6",
+    "is_validation": false,
+    "best_affinity": -8.197,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT7_7XTA",
+    "subtype": "5-HT7",
+    "is_validation": false,
+    "best_affinity": -9.794,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT2A_6WHA",
+    "subtype": "5-HT2A",
+    "is_validation": true,
+    "best_affinity": -8.342,
+    "mw": 323.4
+  },
+  {
+    "molecule": "LSD",
+    "receptor": "5-HT2B_5TUD",
+    "subtype": "5-HT2B",
+    "is_validation": true,
+    "best_affinity": -8.924,
+    "mw": 323.4
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT1A_7E2Y",
+    "subtype": "5-HT1A",
+    "is_validation": false,
+    "best_affinity": -8.839,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT1B_4IAR",
+    "subtype": "5-HT1B",
+    "is_validation": false,
+    "best_affinity": -9.548,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT1D_7E32",
+    "subtype": "5-HT1D",
+    "is_validation": false,
+    "best_affinity": -6.764,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT1E_7E33",
+    "subtype": "5-HT1E",
+    "is_validation": false,
+    "best_affinity": -8.727,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT1F_7EXD",
+    "subtype": "5-HT1F",
+    "is_validation": false,
+    "best_affinity": -9.491,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT2A_7WC6",
+    "subtype": "5-HT2A",
+    "is_validation": false,
+    "best_affinity": -10.032,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT2B_4IB4",
+    "subtype": "5-HT2B",
+    "is_validation": false,
+    "best_affinity": -9.967,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT2C_6BQH",
+    "subtype": "5-HT2C",
+    "is_validation": false,
+    "best_affinity": -9.709,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT4_7XT8",
+    "subtype": "5-HT4",
+    "is_validation": false,
+    "best_affinity": -7.78,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT6_7XTC",
+    "subtype": "5-HT6",
+    "is_validation": false,
+    "best_affinity": -8.802,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT7_7XTA",
+    "subtype": "5-HT7",
+    "is_validation": false,
+    "best_affinity": -9.411,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT2A_6WHA",
+    "subtype": "5-HT2A",
+    "is_validation": true,
+    "best_affinity": -8.935,
+    "mw": 393.5
+  },
+  {
+    "molecule": "1P-LSD",
+    "receptor": "5-HT2B_5TUD",
+    "subtype": "5-HT2B",
+    "is_validation": true,
+    "best_affinity": -9.947,
+    "mw": 393.5
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT1A_7E2Y",
+    "subtype": "5-HT1A",
+    "is_validation": false,
+    "best_affinity": -8.621,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT1B_4IAR",
+    "subtype": "5-HT1B",
+    "is_validation": false,
+    "best_affinity": -9.533,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT1D_7E32",
+    "subtype": "5-HT1D",
+    "is_validation": false,
+    "best_affinity": -5.921,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT1E_7E33",
+    "subtype": "5-HT1E",
+    "is_validation": false,
+    "best_affinity": -8.628,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT1F_7EXD",
+    "subtype": "5-HT1F",
+    "is_validation": false,
+    "best_affinity": -8.902,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT2A_7WC6",
+    "subtype": "5-HT2A",
+    "is_validation": false,
+    "best_affinity": -10.487,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT2B_4IB4",
+    "subtype": "5-HT2B",
+    "is_validation": false,
+    "best_affinity": -8.554,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT2C_6BQH",
+    "subtype": "5-HT2C",
+    "is_validation": false,
+    "best_affinity": -9.394,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT4_7XT8",
+    "subtype": "5-HT4",
+    "is_validation": false,
+    "best_affinity": -9.741,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT6_7XTC",
+    "subtype": "5-HT6",
+    "is_validation": false,
+    "best_affinity": -8.263,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT7_7XTA",
+    "subtype": "5-HT7",
+    "is_validation": false,
+    "best_affinity": -8.483,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT2A_6WHA",
+    "subtype": "5-HT2A",
+    "is_validation": true,
+    "best_affinity": -8.794,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ALD-52",
+    "receptor": "5-HT2B_5TUD",
+    "subtype": "5-HT2B",
+    "is_validation": true,
+    "best_affinity": -8.931,
+    "mw": 365.4
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT1A_7E2Y",
+    "subtype": "5-HT1A",
+    "is_validation": false,
+    "best_affinity": -8.681,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT1B_4IAR",
+    "subtype": "5-HT1B",
+    "is_validation": false,
+    "best_affinity": -8.798,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT1D_7E32",
+    "subtype": "5-HT1D",
+    "is_validation": false,
+    "best_affinity": -7.508,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT1E_7E33",
+    "subtype": "5-HT1E",
+    "is_validation": false,
+    "best_affinity": -8.364,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT1F_7EXD",
+    "subtype": "5-HT1F",
+    "is_validation": false,
+    "best_affinity": -8.944,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT2A_7WC6",
+    "subtype": "5-HT2A",
+    "is_validation": false,
+    "best_affinity": -9.573,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT2B_4IB4",
+    "subtype": "5-HT2B",
+    "is_validation": false,
+    "best_affinity": -8.546,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT2C_6BQH",
+    "subtype": "5-HT2C",
+    "is_validation": false,
+    "best_affinity": -9.121,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT4_7XT8",
+    "subtype": "5-HT4",
+    "is_validation": false,
+    "best_affinity": -8.881,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT6_7XTC",
+    "subtype": "5-HT6",
+    "is_validation": false,
+    "best_affinity": -8.72,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT7_7XTA",
+    "subtype": "5-HT7",
+    "is_validation": false,
+    "best_affinity": -9.308,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT2A_6WHA",
+    "subtype": "5-HT2A",
+    "is_validation": true,
+    "best_affinity": -8.217,
+    "mw": 337.5
+  },
+  {
+    "molecule": "ETH-LAD",
+    "receptor": "5-HT2B_5TUD",
+    "subtype": "5-HT2B",
+    "is_validation": true,
+    "best_affinity": -8.626,
+    "mw": 337.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT1A_7E2Y",
+    "subtype": "5-HT1A",
+    "is_validation": false,
+    "best_affinity": -8.214,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT1B_4IAR",
+    "subtype": "5-HT1B",
+    "is_validation": false,
+    "best_affinity": -9.263,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT1D_7E32",
+    "subtype": "5-HT1D",
+    "is_validation": false,
+    "best_affinity": -8.049,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT1E_7E33",
+    "subtype": "5-HT1E",
+    "is_validation": false,
+    "best_affinity": -8.371,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT1F_7EXD",
+    "subtype": "5-HT1F",
+    "is_validation": false,
+    "best_affinity": -8.843,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT2A_7WC6",
+    "subtype": "5-HT2A",
+    "is_validation": false,
+    "best_affinity": -9.518,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT2B_4IB4",
+    "subtype": "5-HT2B",
+    "is_validation": false,
+    "best_affinity": -9.486,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT2C_6BQH",
+    "subtype": "5-HT2C",
+    "is_validation": false,
+    "best_affinity": -9.142,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT4_7XT8",
+    "subtype": "5-HT4",
+    "is_validation": false,
+    "best_affinity": -9.51,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT6_7XTC",
+    "subtype": "5-HT6",
+    "is_validation": false,
+    "best_affinity": -8.268,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT7_7XTA",
+    "subtype": "5-HT7",
+    "is_validation": false,
+    "best_affinity": -9.415,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT2A_6WHA",
+    "subtype": "5-HT2A",
+    "is_validation": true,
+    "best_affinity": -8.109,
+    "mw": 349.5
+  },
+  {
+    "molecule": "AL-LAD",
+    "receptor": "5-HT2B_5TUD",
+    "subtype": "5-HT2B",
+    "is_validation": true,
+    "best_affinity": -9.546,
+    "mw": 349.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT1A_7E2Y",
+    "subtype": "5-HT1A",
+    "is_validation": false,
+    "best_affinity": -8.614,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT1B_4IAR",
+    "subtype": "5-HT1B",
+    "is_validation": false,
+    "best_affinity": -9.175,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT1D_7E32",
+    "subtype": "5-HT1D",
+    "is_validation": false,
+    "best_affinity": -7.884,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT1E_7E33",
+    "subtype": "5-HT1E",
+    "is_validation": false,
+    "best_affinity": -9.016,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT1F_7EXD",
+    "subtype": "5-HT1F",
+    "is_validation": false,
+    "best_affinity": -9.529,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT2A_7WC6",
+    "subtype": "5-HT2A",
+    "is_validation": false,
+    "best_affinity": -9.558,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT2B_4IB4",
+    "subtype": "5-HT2B",
+    "is_validation": false,
+    "best_affinity": -8.626,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT2C_6BQH",
+    "subtype": "5-HT2C",
+    "is_validation": false,
+    "best_affinity": -8.672,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT4_7XT8",
+    "subtype": "5-HT4",
+    "is_validation": false,
+    "best_affinity": -7.93,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT6_7XTC",
+    "subtype": "5-HT6",
+    "is_validation": false,
+    "best_affinity": -8.385,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT7_7XTA",
+    "subtype": "5-HT7",
+    "is_validation": false,
+    "best_affinity": -10.032,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT2A_6WHA",
+    "subtype": "5-HT2A",
+    "is_validation": true,
+    "best_affinity": -7.976,
+    "mw": 351.5
+  },
+  {
+    "molecule": "PRO-LAD",
+    "receptor": "5-HT2B_5TUD",
+    "subtype": "5-HT2B",
+    "is_validation": true,
+    "best_affinity": -9.024,
+    "mw": 351.5
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT1A_7E2Y",
+    "subtype": "5-HT1A",
+    "is_validation": false,
+    "best_affinity": -8.912,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT1B_4IAR",
+    "subtype": "5-HT1B",
+    "is_validation": false,
+    "best_affinity": -9.453,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT1D_7E32",
+    "subtype": "5-HT1D",
+    "is_validation": false,
+    "best_affinity": -8.199,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT1E_7E33",
+    "subtype": "5-HT1E",
+    "is_validation": false,
+    "best_affinity": -9.577,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT1F_7EXD",
+    "subtype": "5-HT1F",
+    "is_validation": false,
+    "best_affinity": -8.703,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT2A_7WC6",
+    "subtype": "5-HT2A",
+    "is_validation": false,
+    "best_affinity": -9.207,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT2B_4IB4",
+    "subtype": "5-HT2B",
+    "is_validation": false,
+    "best_affinity": -8.933,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT2C_6BQH",
+    "subtype": "5-HT2C",
+    "is_validation": false,
+    "best_affinity": -9.013,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT4_7XT8",
+    "subtype": "5-HT4",
+    "is_validation": false,
+    "best_affinity": -9.125,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT6_7XTC",
+    "subtype": "5-HT6",
+    "is_validation": false,
+    "best_affinity": -8.656,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT7_7XTA",
+    "subtype": "5-HT7",
+    "is_validation": false,
+    "best_affinity": -9.415,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT2A_6WHA",
+    "subtype": "5-HT2A",
+    "is_validation": true,
+    "best_affinity": -7.881,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergine",
+    "receptor": "5-HT2B_5TUD",
+    "subtype": "5-HT2B",
+    "is_validation": true,
+    "best_affinity": -8.528,
+    "mw": 267.3
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT1A_7E2Y",
+    "subtype": "5-HT1A",
+    "is_validation": false,
+    "best_affinity": -8.852,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT1B_4IAR",
+    "subtype": "5-HT1B",
+    "is_validation": false,
+    "best_affinity": -9.381,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT1D_7E32",
+    "subtype": "5-HT1D",
+    "is_validation": false,
+    "best_affinity": -6.801,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT1E_7E33",
+    "subtype": "5-HT1E",
+    "is_validation": false,
+    "best_affinity": -8.655,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT1F_7EXD",
+    "subtype": "5-HT1F",
+    "is_validation": false,
+    "best_affinity": -9.188,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT2A_7WC6",
+    "subtype": "5-HT2A",
+    "is_validation": false,
+    "best_affinity": -9.556,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT2B_4IB4",
+    "subtype": "5-HT2B",
+    "is_validation": false,
+    "best_affinity": -8.297,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT2C_6BQH",
+    "subtype": "5-HT2C",
+    "is_validation": false,
+    "best_affinity": -9.026,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT4_7XT8",
+    "subtype": "5-HT4",
+    "is_validation": false,
+    "best_affinity": -8.683,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT6_7XTC",
+    "subtype": "5-HT6",
+    "is_validation": false,
+    "best_affinity": -8.262,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT7_7XTA",
+    "subtype": "5-HT7",
+    "is_validation": false,
+    "best_affinity": -9.919,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT2A_6WHA",
+    "subtype": "5-HT2A",
+    "is_validation": true,
+    "best_affinity": -7.97,
+    "mw": 325.4
+  },
+  {
+    "molecule": "Ergometrine",
+    "receptor": "5-HT2B_5TUD",
+    "subtype": "5-HT2B",
+    "is_validation": true,
+    "best_affinity": -8.431,
+    "mw": 325.4
+  }
+]
